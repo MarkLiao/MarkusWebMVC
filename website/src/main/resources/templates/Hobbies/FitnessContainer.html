@@ -1,0 +1,26 @@
+<section class="fitnessContent">
+		<h2>{{fitnessTitle}}</h2>
+		<div class="fitness-3-5">
+			<div class="fitnessSubDiv-1-2 fitnessSubDiv-1-2-1">
+				<h4>{{routineTitle}}</h4>
+				<div class="fitnessRoutine">
+				<div ng-repeat="days in daysOfWeek">
+					<div class="fitnessLabel"><strong>{{days.dayOfWeek}}</strong></div>
+					<div class="fitnessLabelValue">{{days.value}}</div>
+				</div>
+				</div>
+			</div>
+			<div class="fitnessSubDiv-1-2 fitnessSubDiv-1-2-2">
+				<h4>{{prStatsTitle}}</h4>
+				<div class="fitnessPrStats">
+				<div ng-repeat="activity in activityList">
+					<div class="fitnessLabel"><strong>{{activity.name}}</strong></div>
+					<div class="fitnessLabelValue">{{activity.value}}</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="fitness-2-5">
+			<img class="hobbyImg" ng-src="{{fitnessImg1}}"/>
+		</div>
+</section>

@@ -1,0 +1,34 @@
+<md-content class="projectTabContainer">
+    <md-tabs md-selected="selectedTab" md-dynamic-height="">
+      <md-tab id="angularWebTab" ng-click="changeIndex(0)">
+        <md-tab-label>{{aWTabTitle}}</md-tab-label>
+        <md-tab-body>
+          <div ng-include="'/MarkusWeb/Project/AngularWebsite'"></div>
+        </md-tab-body>
+      </md-tab>
+      <md-tab id="workoutProfileTab" ng-click="changeIndex(1)" >
+        <md-tab-label>{{wpTabTitle}}</md-tab-label>
+        <md-tab-body>
+           <div class="workoutProfileDiv" ng-include="'/MarkusWeb/Project/WorkoutProfile'"></div>
+        </md-tab-body>
+      </md-tab>
+      <md-tab id="flipNmatchTab" ng-click="changeIndex(3)">
+        <md-tab-label>{{fnMTabTitle}}</md-tab-label>
+        <md-tab-body>
+          <div class="flipNMatchDiv" ng-include="'/MarkusWeb/Project/FlipNMatch'" ng-cloak=""></div>
+        </md-tab-body>
+      </md-tab>
+      <md-tab id="mathQWhizTab" ng-click="changeIndex(4)">
+        <md-tab-label>{{mQTabTitle}}</md-tab-label>
+        <md-tab-body>
+         <div class="mathQwhizDiv" ng-include="'/MarkusWeb/Project/MathQWhiz'" ng-cloak=""></div>
+        </md-tab-body>
+      </md-tab>
+       <md-tab id="fitnessQuestTab" ng-click="changeIndex(2)">
+        <md-tab-label>{{fQTabTitle}}</md-tab-label>
+        <md-tab-body>
+          <div class="fitnessQuestDiv" ng-include="'/MarkusWeb/Project/FitnessQuest'" ng-cloak=""></div>
+        </md-tab-body>
+      </md-tab>
+    </md-tabs>
+</md-content>

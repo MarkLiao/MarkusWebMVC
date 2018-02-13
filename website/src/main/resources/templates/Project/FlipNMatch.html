@@ -1,0 +1,17 @@
+<div class="projectDate" >{{flipNMatchDate}}</div>
+<div class="flipNMatchImgContainer"><img ng-click="enlargeImg($event)" class="projectImg" ng-src="{{flipNMatch_img1}}"/><img ng-click="enlargeImg($event)" class="projectImg" src="{{flipNMatch_img2}}"/></div>
+<div class="flipNMatchContentContainer">
+	<section>
+		<h4>{{projectSummaryTitle}}</h4>
+		<p>{{fnMSummaryContent}}</p>
+	</section>
+	<section>
+		<h4>{{projectTechTitle}}</h4>
+		<p>{{fnMTechContent_1}}</p>
+		<p>{{fnMTechContent_2}}</p>
+	</section>
+	<section>
+		<h4>{{projectAvailTitle}}</h4>
+		<p><a href="{{fnMLink}}">{{fnMAvailContent}}</a></p>
+	</section>
+</div>

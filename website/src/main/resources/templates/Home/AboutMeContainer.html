@@ -1,0 +1,35 @@
+<md-content class="aboutMeContainer">
+<div><span class="aboutMeTitle">{{aboutMeTitle}}</span></div>
+<div class="aboutMeParagraph">
+	<section class="summaryInfo">
+	<span>
+		<h4>{{summaryTitle}}</h4> 
+		<p>{{summaryContent}}</p>
+	</span>
+	</section>
+	<section class="educationInfo">
+		<span>
+		<h4>{{educationTitle}}</h4> 
+		<p>{{schoolContent}}</p>
+		<p>{{majorContent}}</p>
+		</span>
+	</section>
+	<section class="contactInfo">
+		<span>
+		<h4>{{contactInfoTitle}}</h4>
+		<p>{{contactContent}}</p>
+		</span>
+		<md-button class="md-fab md-mini contactButtons" aria-label="call">
+			<md-tooltip md-direction="bottom">{{securityPrompt}}</md-tooltip>
+  			<ng-md-icon class="iconCenter" icon="phone" style="fill:black" size="16"></ng-md-icon> 
+		</md-button>
+		<md-button class="md-fab md-mini contactButtons" aria-label="email">
+			<md-tooltip md-direction="bottom">{{securityPrompt}}</md-tooltip>
+  			<ng-md-icon class="iconCenter" icon="email" style="fill:black" size="16"></ng-md-icon> 
+		</md-button>
+		<md-button class="md-fab md-mini contactButtons" aria-label="linkedIn" ng-click="goToLinkedIn()">
+			<md-tooltip md-direction="bottom">{{linkedInToolTip}}</md-tooltip>
+  			<ng-md-icon class="iconCenter" icon="linkedin" style="fill:black" size="16"></ng-md-icon> 
+		</md-button>
+	</section>
+</div></md-content>

@@ -1,0 +1,21 @@
+<div class="baseContainer" ng-controller="projectController">
+	<div>
+	<div><span class="projectTitle">{{projectsTitle}}</span></div>
+	<div>
+		<div class="projectIntroContentDiv"><span class="projectIntroContentText">{{pBannerContent}}</span>
+		</div>
+	</div>
+	</div>
+	<div ng-include="'/MarkusWeb/Project/ProjectTabContainer'"></div>
+	<div class="imgPopOutBackDrop" ng-show="showElement">
+  		<!-- The Close Button -->
+ 		 <span ng-click="close()" id="imgPopOutBackDropClose" class="imgPopOutBackDropClose">&times;</span>
+
+ 		<!-- Modal Content (The Image) -->
+  		<img  name="imgPopOutContent" ng-src="{{selectedImgUrl}}"/>
+
+ 		 <!-- Modal Caption (Image Text) -->
+  		<div id="caption"></div>
+	</div>
+</div>
+

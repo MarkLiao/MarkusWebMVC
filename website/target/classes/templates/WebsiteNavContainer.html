@@ -1,0 +1,17 @@
+<md-content class="md-padding" ng-controller="webAppNavController">
+    <md-nav-bar
+      md-no-ink-bar="disableInkBar"
+      md-selected-nav-item="currentNavItem"
+      nav-bar-aria-label="navigation links">
+      <md-nav-item md-nav-click="changeContainer('homePage')" name="homePage" >
+        Home
+      </md-nav-item>
+      <md-nav-item md-nav-click="changeContainer('projectPage')" name="projectPage">
+        Projects
+      </md-nav-item>
+         <md-nav-item md-nav-click="changeContainer('hobbyPage')" name="hobbyPage">
+        Hobbies
+      </md-nav-item>
+    </md-nav-bar>
+    <div ng-include="selectedNav"></div>
+</md-content>
